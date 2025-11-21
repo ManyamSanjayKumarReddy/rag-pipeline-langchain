@@ -12,4 +12,4 @@ wheels/
 .python-version
 
 uv.lock
-data
+chromadb
