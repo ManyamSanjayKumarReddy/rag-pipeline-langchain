@@ -13,3 +13,5 @@ wheels/
 
 uv.lock
 chromadb
+
+faiss_store/
