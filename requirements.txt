@@ -7,3 +7,6 @@ tqdm
 sentence-transformers
 faiss-cpu
 chromadb
+
+langchain[openai]
+python-dotenv
