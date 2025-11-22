@@ -5,7 +5,7 @@ from langchain_community.document_loaders import PyMuPDFLoader, JSONLoader, Text
 def load_all_documents(data_dir: str) -> List[Any]:
     """
     Load all supported files from the data directory and convert to LangChain document structure.
-    Supported: PDF, TXT, CSV, Excel, Word, JSON
+    Supported: PDF, TXT, JSON
     """
 
     # use the project root folder for data
@@ -55,5 +55,5 @@ def load_all_documents(data_dir: str) -> List[Any]:
             print(f"[ERROR] Failed to load JSON {json_file}: {e}")
 
     print(f"[DEBUG] Total loaded documents: {len(documents)}")
-    
+
     return documents

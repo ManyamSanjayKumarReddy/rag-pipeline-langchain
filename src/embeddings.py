@@ -3,7 +3,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 import numpy as np
 from src.document_loader import load_all_documents
-from src.models import embedding_model
 
 
 class EmbeddingPipeline:
@@ -12,7 +11,6 @@ class EmbeddingPipeline:
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
         self.model = SentenceTransformer(model_name)
-        # self.model = embedding_model
         print(f"[INFO] Loaded embedding model: {model_name}")
 
     

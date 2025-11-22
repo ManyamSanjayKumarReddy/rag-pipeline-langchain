@@ -12,6 +12,10 @@ wheels/
 .python-version
 
 uv.lock
-chromadb
 
+# Databases and sensitive Data
+chromadb/
+chroma_ejl/
 faiss_store/
+ejl_data/
+
